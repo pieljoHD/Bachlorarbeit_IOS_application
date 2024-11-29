@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFD436912CBE52AC001EEF0A /* ChangeDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD436902CBE52AC001EEF0A /* ChangeDialog.swift */; };
+		EFDBE5CF2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE5CE2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift */; };
+		EFDBE5D12CB53798009F7BE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE5D02CB53798009F7BE9 /* ContentView.swift */; };
+		EFDBE5D32CB5379A009F7BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDBE5D22CB5379A009F7BE9 /* Assets.xcassets */; };
+		EFDBE5D62CB5379A009F7BE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDBE5D52CB5379A009F7BE9 /* Preview Assets.xcassets */; };
+		EFDBE5E02CB5379A009F7BE9 /* BachlorarbeitTestappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE5DF2CB5379A009F7BE9 /* BachlorarbeitTestappTests.swift */; };
+		EFDBE5EA2CB5379A009F7BE9 /* BachlorarbeitTestappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE5E92CB5379A009F7BE9 /* BachlorarbeitTestappUITests.swift */; };
+		EFDBE5EC2CB5379A009F7BE9 /* BachlorarbeitTestappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE5EB2CB5379A009F7BE9 /* BachlorarbeitTestappUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFDBE5DC2CB5379A009F7BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE5C32CB53798009F7BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDBE5CA2CB53798009F7BE9;
+			remoteInfo = BachlorarbeitTestapp;
+		};
+		EFDBE5E62CB5379A009F7BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDBE5C32CB53798009F7BE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDBE5CA2CB53798009F7BE9;
+			remoteInfo = BachlorarbeitTestapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFD436902CBE52AC001EEF0A /* ChangeDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDialog.swift; sourceTree = "<group>"; };
+		EFDBE5CB2CB53798009F7BE9 /* BachlorarbeitTestapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BachlorarbeitTestapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBE5CE2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachlorarbeitTestappApp.swift; sourceTree = "<group>"; };
+		EFDBE5D02CB53798009F7BE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFDBE5D22CB5379A009F7BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFDBE5D52CB5379A009F7BE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFDBE5DB2CB5379A009F7BE9 /* BachlorarbeitTestappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BachlorarbeitTestappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBE5DF2CB5379A009F7BE9 /* BachlorarbeitTestappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachlorarbeitTestappTests.swift; sourceTree = "<group>"; };
+		EFDBE5E52CB5379A009F7BE9 /* BachlorarbeitTestappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BachlorarbeitTestappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDBE5E92CB5379A009F7BE9 /* BachlorarbeitTestappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachlorarbeitTestappUITests.swift; sourceTree = "<group>"; };
+		EFDBE5EB2CB5379A009F7BE9 /* BachlorarbeitTestappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachlorarbeitTestappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFDBE5C82CB53798009F7BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE5D82CB5379A009F7BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE5E22CB5379A009F7BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFDBE5C22CB53798009F7BE9 = {
+			isa = PBXGroup;
+			children = (
+				EFDBE5CD2CB53798009F7BE9 /* BachlorarbeitTestapp */,
+				EFDBE5DE2CB5379A009F7BE9 /* BachlorarbeitTestappTests */,
+				EFDBE5E82CB5379A009F7BE9 /* BachlorarbeitTestappUITests */,
+				EFDBE5CC2CB53798009F7BE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFDBE5CC2CB53798009F7BE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBE5CB2CB53798009F7BE9 /* BachlorarbeitTestapp.app */,
+				EFDBE5DB2CB5379A009F7BE9 /* BachlorarbeitTestappTests.xctest */,
+				EFDBE5E52CB5379A009F7BE9 /* BachlorarbeitTestappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDBE5CD2CB53798009F7BE9 /* BachlorarbeitTestapp */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBE5CE2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift */,
+				EFDBE5D02CB53798009F7BE9 /* ContentView.swift */,
+				EFDBE5D22CB5379A009F7BE9 /* Assets.xcassets */,
+				EFDBE5D42CB5379A009F7BE9 /* Preview Content */,
+				EFD436902CBE52AC001EEF0A /* ChangeDialog.swift */,
+			);
+			path = BachlorarbeitTestapp;
+			sourceTree = "<group>";
+		};
+		EFDBE5D42CB5379A009F7BE9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBE5D52CB5379A009F7BE9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFDBE5DE2CB5379A009F7BE9 /* BachlorarbeitTestappTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBE5DF2CB5379A009F7BE9 /* BachlorarbeitTestappTests.swift */,
+			);
+			path = BachlorarbeitTestappTests;
+			sourceTree = "<group>";
+		};
+		EFDBE5E82CB5379A009F7BE9 /* BachlorarbeitTestappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFDBE5E92CB5379A009F7BE9 /* BachlorarbeitTestappUITests.swift */,
+				EFDBE5EB2CB5379A009F7BE9 /* BachlorarbeitTestappUITestsLaunchTests.swift */,
+			);
+			path = BachlorarbeitTestappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFDBE5CA2CB53798009F7BE9 /* BachlorarbeitTestapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDBE5EF2CB5379A009F7BE9 /* Build configuration list for PBXNativeTarget "BachlorarbeitTestapp" */;
+			buildPhases = (
+				EFDBE5C72CB53798009F7BE9 /* Sources */,
+				EFDBE5C82CB53798009F7BE9 /* Frameworks */,
+				EFDBE5C92CB53798009F7BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BachlorarbeitTestapp;
+			productName = BachlorarbeitTestapp;
+			productReference = EFDBE5CB2CB53798009F7BE9 /* BachlorarbeitTestapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFDBE5DA2CB5379A009F7BE9 /* BachlorarbeitTestappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDBE5F22CB5379A009F7BE9 /* Build configuration list for PBXNativeTarget "BachlorarbeitTestappTests" */;
+			buildPhases = (
+				EFDBE5D72CB5379A009F7BE9 /* Sources */,
+				EFDBE5D82CB5379A009F7BE9 /* Frameworks */,
+				EFDBE5D92CB5379A009F7BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFDBE5DD2CB5379A009F7BE9 /* PBXTargetDependency */,
+			);
+			name = BachlorarbeitTestappTests;
+			productName = BachlorarbeitTestappTests;
+			productReference = EFDBE5DB2CB5379A009F7BE9 /* BachlorarbeitTestappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFDBE5E42CB5379A009F7BE9 /* BachlorarbeitTestappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDBE5F52CB5379A009F7BE9 /* Build configuration list for PBXNativeTarget "BachlorarbeitTestappUITests" */;
+			buildPhases = (
+				EFDBE5E12CB5379A009F7BE9 /* Sources */,
+				EFDBE5E22CB5379A009F7BE9 /* Frameworks */,
+				EFDBE5E32CB5379A009F7BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFDBE5E72CB5379A009F7BE9 /* PBXTargetDependency */,
+			);
+			name = BachlorarbeitTestappUITests;
+			productName = BachlorarbeitTestappUITests;
+			productReference = EFDBE5E52CB5379A009F7BE9 /* BachlorarbeitTestappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFDBE5C32CB53798009F7BE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EFDBE5CA2CB53798009F7BE9 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					EFDBE5DA2CB5379A009F7BE9 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EFDBE5CA2CB53798009F7BE9;
+					};
+					EFDBE5E42CB5379A009F7BE9 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = EFDBE5CA2CB53798009F7BE9;
+					};
+				};
+			};
+			buildConfigurationList = EFDBE5C62CB53798009F7BE9 /* Build configuration list for PBXProject "BachlorarbeitTestapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFDBE5C22CB53798009F7BE9;
+			productRefGroup = EFDBE5CC2CB53798009F7BE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFDBE5CA2CB53798009F7BE9 /* BachlorarbeitTestapp */,
+				EFDBE5DA2CB5379A009F7BE9 /* BachlorarbeitTestappTests */,
+				EFDBE5E42CB5379A009F7BE9 /* BachlorarbeitTestappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFDBE5C92CB53798009F7BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDBE5D62CB5379A009F7BE9 /* Preview Assets.xcassets in Resources */,
+				EFDBE5D32CB5379A009F7BE9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE5D92CB5379A009F7BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE5E32CB5379A009F7BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFDBE5C72CB53798009F7BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDBE5D12CB53798009F7BE9 /* ContentView.swift in Sources */,
+				EFD436912CBE52AC001EEF0A /* ChangeDialog.swift in Sources */,
+				EFDBE5CF2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE5D72CB5379A009F7BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDBE5E02CB5379A009F7BE9 /* BachlorarbeitTestappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBE5E12CB5379A009F7BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDBE5EA2CB5379A009F7BE9 /* BachlorarbeitTestappUITests.swift in Sources */,
+				EFDBE5EC2CB5379A009F7BE9 /* BachlorarbeitTestappUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFDBE5DD2CB5379A009F7BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDBE5CA2CB53798009F7BE9 /* BachlorarbeitTestapp */;
+			targetProxy = EFDBE5DC2CB5379A009F7BE9 /* PBXContainerItemProxy */;
+		};
+		EFDBE5E72CB5379A009F7BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDBE5CA2CB53798009F7BE9 /* BachlorarbeitTestapp */;
+			targetProxy = EFDBE5E62CB5379A009F7BE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EFDBE5ED2CB5379A009F7BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFDBE5EE2CB5379A009F7BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFDBE5F02CB5379A009F7BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BachlorarbeitTestapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 579QL48Y2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jockel.BachlorarbeitTestapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFDBE5F12CB5379A009F7BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BachlorarbeitTestapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 579QL48Y2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jockel.BachlorarbeitTestapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFDBE5F32CB5379A009F7BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jockel.BachlorarbeitTestappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BachlorarbeitTestapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BachlorarbeitTestapp";
+			};
+			name = Debug;
+		};
+		EFDBE5F42CB5379A009F7BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jockel.BachlorarbeitTestappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BachlorarbeitTestapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BachlorarbeitTestapp";
+			};
+			name = Release;
+		};
+		EFDBE5F62CB5379A009F7BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jockel.BachlorarbeitTestappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BachlorarbeitTestapp;
+			};
+			name = Debug;
+		};
+		EFDBE5F72CB5379A009F7BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jockel.BachlorarbeitTestappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BachlorarbeitTestapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFDBE5C62CB53798009F7BE9 /* Build configuration list for PBXProject "BachlorarbeitTestapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDBE5ED2CB5379A009F7BE9 /* Debug */,
+				EFDBE5EE2CB5379A009F7BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDBE5EF2CB5379A009F7BE9 /* Build configuration list for PBXNativeTarget "BachlorarbeitTestapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDBE5F02CB5379A009F7BE9 /* Debug */,
+				EFDBE5F12CB5379A009F7BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDBE5F22CB5379A009F7BE9 /* Build configuration list for PBXNativeTarget "BachlorarbeitTestappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDBE5F32CB5379A009F7BE9 /* Debug */,
+				EFDBE5F42CB5379A009F7BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDBE5F52CB5379A009F7BE9 /* Build configuration list for PBXNativeTarget "BachlorarbeitTestappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDBE5F62CB5379A009F7BE9 /* Debug */,
+				EFDBE5F72CB5379A009F7BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFDBE5C32CB53798009F7BE9 /* Project object */;
+}
