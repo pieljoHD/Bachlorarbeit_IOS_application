@@ -1,12 +1,11 @@
 import SwiftUI
 
-
-
 struct ContentView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var isLoggedIn: Bool = false
     @State private var isError: Bool = false
+    
     
     var body: some View {
         NavigationView {
@@ -14,31 +13,48 @@ struct ContentView: View {
                 SecondScreen()
             } else {
                 VStack {
-                    TextField(
-                        "",
-                        text: $username
-                    )
-                    .autocapitalization(.none)
-                    .accessibilityIdentifier("UsernameInput")
-                    .placeholder(when: username.isEmpty) {
-                        Text("Benutzername").foregroundColor(Color(hex: "666666"))
+                    HStack
+                    {
+                        TextField(
+                            "",
+                            text: $username
+                        )
+                        .autocapitalization(.none)
+                        .accessibilityIdentifier("UserNameInput")
+                        .placeholder(when: username.isEmpty) {
+                            Text("Benutzername").foregroundColor(Color(hex: "666666"))
+                        }
+                        .accentColor(Color.black)
+                        .padding([.horizontal], 30)
+                        .padding([.vertical], 15)
+                        .background(RoundedRectangle(cornerRadius: 4).fill(Color(hex: "FFF1ECE6")))
+                        .padding([.leading], 40)
+                        .padding([.trailing], 15)
+                        .padding([.bottom], 8)
+                        .onTapGesture {isError = false}
+                        
+                        
+                        Button {
+                            username = ""
+                        } label: {
+                            Image(systemName: "multiply.circle.fill")
+                        }
+                        .foregroundColor(.secondary)
+                        .padding(.trailing, 0.0)
+                        .padding(.leading, 0.0)
+                        .padding(.bottom, 6.0)
+                        .accessibilityIdentifier("clearButton")
+                        
                     }
-                    .accentColor(Color.black)
-                    .padding([.horizontal], 15)
-                    .padding([.vertical], 15)
-                    .background(RoundedRectangle(cornerRadius: 4).fill(Color(hex: "FFF1ECE6")))
-                    .padding([.horizontal], 40)
-                    .padding([.bottom], 8)
-                    .onTapGesture {isError = false}
-                    
+                   
                     
                     SecureField("", text: $password)
                         .accessibilityIdentifier("PasswortInput")
-                        .placeholder(when: username.isEmpty) {
+                        .placeholder(when: password.isEmpty) {
                             Text("Passwort").foregroundColor(Color(hex: "666666"))
                         }
                         .accentColor(Color.black)
-                        .padding([.horizontal], 15)
+                        .padding([.horizontal], 30)
                         .padding([.vertical], 15)
                         .background(RoundedRectangle(cornerRadius: 4).fill(Color(hex: "FFF1ECE6")))
                         .padding([.horizontal], 40)
@@ -79,19 +95,11 @@ struct ContentView: View {
     }
 }
 
-struct Todo: Identifiable {
-    let name: String
-    let id = UUID()
-}
-
-
-
-
 struct SecondScreen: View {
     @State private var newItem: String = ""
-    @State private var items: [Todo] = []
+    @State private var items: [String] = []
     @State private var showDialog: Bool = false
-    @State private var rowClickedId: UUID = UUID()
+    @State private var rowClickedId: Int = -1
     
     var body: some View {
         ZStack {
@@ -101,7 +109,7 @@ struct SecondScreen: View {
                         .frame(minWidth: 30, maxWidth: .infinity, minHeight: 0, maxHeight: 55)
                         .autocapitalization(.none)
                         .accentColor(Color.black)
-                        .padding([.horizontal], 20)
+                        .padding([.horizontal], 28)
                         .background(
                             UnevenRoundedRectangle(
                                 cornerRadii: .init(topLeading: 25, bottomLeading: 25, bottomTrailing: 0, topTrailing: 0)).fill(Color(hex: "f1ece6")))
@@ -111,7 +119,7 @@ struct SecondScreen: View {
                     
                     Button(action: {
                         if !newItem.isEmpty {
-                            items.append(Todo(name: newItem))
+                            items.append(newItem)
                             newItem = ""
                             dismissKeyboard()
                         }
@@ -127,30 +135,37 @@ struct SecondScreen: View {
                     
                 }
                 Spacer().frame(maxHeight: 40)
-                List(items)
-                { item in
+                
+                List()
+                { 
+                    ForEach(items.indices, id: \.self) { index in
                     HStack{
                         Button(action: {
-                            rowClickedId = item.id
+                            rowClickedId = index
                             showDialog = true
                         }) {
-                            Text(item.name)
+                            Text(items[index])
+                                .accessibilityIdentifier ("todoText \(index)")
                             Spacer()
                         }
                         .buttonStyle(PlainButtonStyle())
-                        
-                        
+
                         Button(action: {
-                            items.removeAll(where: { $0.id == item.id })
+                            items.remove(at: index)
                         }) {
                             Image(systemName: "trash.fill")
                                 .padding([.horizontal],0)
                                 .foregroundColor(Color(hex: "d36969"))
+                                .accessibilityIdentifier ("deleteButton \(index)")
                         }
                         .buttonStyle(PlainButtonStyle())
                     }
                     .listRowSeparatorTint(Color(hex: "99CFC9"))
                     .listRowBackground(RoundedRectangle(cornerRadius: 20).fill(Color(hex: "f1ece6")))
+                }
+                .listStyle(.plain)
+                .padding([.trailing], 20)
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color(hex: "f1ece6")))
                 }
                 .listStyle(.plain)
                 .padding([.trailing], 20)
@@ -161,7 +176,7 @@ struct SecondScreen: View {
             if(showDialog) {
                 ChangeDialog(
                     isShown: $showDialog,
-                    todo: items.first(where: { $0.id == rowClickedId })?.name ,
+                    todo: items[rowClickedId] ,
                     save: setNewTodo
                 )
             }
@@ -169,15 +184,13 @@ struct SecondScreen: View {
     }
     
     func setNewTodo(todo: String) {
-        if let index = items.firstIndex(where: { $0.id == rowClickedId}) {
-            items[index] = Todo(name: todo)
-        }
+        items[rowClickedId] = todo
     }
 }
 
 func dismissKeyboard() {
-     UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.endEditing(true)
-   }
+    UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.endEditing(true)
+}
 
 extension View {
     func button(action: @escaping () -> Void) -> some View {
