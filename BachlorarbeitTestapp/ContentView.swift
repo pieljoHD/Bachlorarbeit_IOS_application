@@ -43,22 +43,38 @@ struct ContentView: View {
                         .padding(.trailing, 0.0)
                         .padding(.leading, 0.0)
                         .padding(.bottom, 6.0)
-                        .accessibilityIdentifier("clearButton")
-                        
+                        .accessibilityIdentifier("clearButtonUserName")
                     }
                    
-                    
-                    SecureField("", text: $password)
-                        .accessibilityIdentifier("PasswortInput")
-                        .placeholder(when: password.isEmpty) {
-                            Text("Passwort").foregroundColor(Color(hex: "666666"))
+                    HStack
+                    {
+                       
+                        SecureField("", text: $password)
+                            .accessibilityIdentifier("PasswortInput")
+                            .placeholder(when: password.isEmpty) {
+                                Text("Passwort").foregroundColor(Color(hex: "666666"))
+                            }
+                            .accentColor(Color.black)
+                            .padding([.horizontal], 30)
+                            .padding([.vertical], 15)
+                            .background(RoundedRectangle(cornerRadius: 4).fill(Color(hex: "FFF1ECE6")))
+                            .padding([.leading], 40)
+                            .padding([.trailing], 15)
+                            .padding([.bottom], 8)
+                            .onTapGesture {isError = false}
+                        
+                        Button {
+                            password = ""
+                        } label: {
+                            Image(systemName: "multiply.circle.fill")
                         }
-                        .accentColor(Color.black)
-                        .padding([.horizontal], 30)
-                        .padding([.vertical], 15)
-                        .background(RoundedRectangle(cornerRadius: 4).fill(Color(hex: "FFF1ECE6")))
-                        .padding([.horizontal], 40)
-                        .onTapGesture {isError = false}
+                        .foregroundColor(.secondary)
+                        .padding(.trailing, 0.0)
+                        .padding(.leading, 0.0)
+                        .padding(.bottom, 6.0)
+                        .accessibilityIdentifier("clearButtonPassword")
+                    }
+                   
                     
                     
                     if(isError) {
