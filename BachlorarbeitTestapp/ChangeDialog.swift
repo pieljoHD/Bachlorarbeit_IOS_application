@@ -17,7 +17,6 @@ struct ChangeDialog: View {
     let save: (String) -> ()
     
     @State private var todoChanged: String = ""
-    @State private var offset: CGFloat = 1000
     
     
     var body: some View {
@@ -92,20 +91,12 @@ struct ChangeDialog: View {
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .shadow(radius: 12)
             .padding([.horizontal], 50)
-            .offset(x: 0, y: offset)
-            .onAppear{
-                withAnimation(.spring()) {
-                    offset = 0
-                }
-            }
+            
         }
         .ignoresSafeArea()
     }
     func close() {
-        withAnimation(.spring()) {
-            offset = 1000
-            isShown = false
-        }
+        isShown = false
     }
 }
 
