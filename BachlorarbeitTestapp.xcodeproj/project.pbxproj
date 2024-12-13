@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFA27A852D0C2DBE0062B943 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA27A842D0C2DBE0062B943 /* CustomTextField.swift */; };
+		EFA27A862D0C2DBE0062B943 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA27A842D0C2DBE0062B943 /* CustomTextField.swift */; };
+		EFA27A872D0C2DBE0062B943 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA27A842D0C2DBE0062B943 /* CustomTextField.swift */; };
 		EFD436912CBE52AC001EEF0A /* ChangeDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD436902CBE52AC001EEF0A /* ChangeDialog.swift */; };
 		EFDBE5CF2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE5CE2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift */; };
 		EFDBE5D12CB53798009F7BE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBE5D02CB53798009F7BE9 /* ContentView.swift */; };
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EFA27A842D0C2DBE0062B943 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		EFD436902CBE52AC001EEF0A /* ChangeDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDialog.swift; sourceTree = "<group>"; };
 		EFDBE5CB2CB53798009F7BE9 /* BachlorarbeitTestapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BachlorarbeitTestapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBE5CE2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachlorarbeitTestappApp.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				EFDBE5D22CB5379A009F7BE9 /* Assets.xcassets */,
 				EFDBE5D42CB5379A009F7BE9 /* Preview Content */,
 				EFD436902CBE52AC001EEF0A /* ChangeDialog.swift */,
+				EFA27A842D0C2DBE0062B943 /* CustomTextField.swift */,
 			);
 			path = BachlorarbeitTestapp;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA27A852D0C2DBE0062B943 /* CustomTextField.swift in Sources */,
 				EFDBE5D12CB53798009F7BE9 /* ContentView.swift in Sources */,
 				EFD436912CBE52AC001EEF0A /* ChangeDialog.swift in Sources */,
 				EFDBE5CF2CB53798009F7BE9 /* BachlorarbeitTestappApp.swift in Sources */,
@@ -270,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA27A862D0C2DBE0062B943 /* CustomTextField.swift in Sources */,
 				EFDBE5E02CB5379A009F7BE9 /* BachlorarbeitTestappTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +287,7 @@
 			files = (
 				EFDBE5EA2CB5379A009F7BE9 /* BachlorarbeitTestappUITests.swift in Sources */,
 				EFDBE5EC2CB5379A009F7BE9 /* BachlorarbeitTestappUITestsLaunchTests.swift in Sources */,
+				EFA27A872D0C2DBE0062B943 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

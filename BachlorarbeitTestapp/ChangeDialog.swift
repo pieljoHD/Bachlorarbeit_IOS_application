@@ -35,12 +35,7 @@ struct ChangeDialog: View {
                   .autocapitalization(.none)
                   .accessibilityIdentifier("changeTodoInput")
                   .accentColor(Color.black)
-                  .padding([.horizontal], 24)
-                  .padding([.vertical], 15)
-                  .background(RoundedRectangle(cornerRadius: 12).fill(Color(hex: "FFEDE8D0")))
-                  .padding([.horizontal], 15)
-                  .padding([.top], 15)
-                  .padding([.bottom], -15)
+
                   .onAppear {
                       todoChanged = todo ?? ""
                   }
@@ -51,13 +46,15 @@ struct ChangeDialog: View {
                       Image(systemName: "multiply.circle.fill")
                   }
                   .foregroundColor(.secondary)
-                  .padding(.trailing, 8.0)
-                  .padding(.leading, 0.0)
-                  .padding(.bottom, -38.0)
                   .accessibilityIdentifier("clearButton")
                   
             }
-            
+              .padding(.horizontal)
+              .padding(.vertical, 15)
+              .background(RoundedRectangle(cornerRadius: 12).fill(Color(hex: "FFEDE8D0")))
+              .padding([.horizontal], 15)
+              .padding([.top], 15)
+              .padding([.bottom], -15)
                
                 
                 HStack {

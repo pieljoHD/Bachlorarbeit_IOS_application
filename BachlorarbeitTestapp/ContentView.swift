@@ -13,69 +13,11 @@ struct ContentView: View {
                 SecondScreen()
             } else {
                 VStack {
-                    HStack
-                    {
-                        TextField(
-                            "",
-                            text: $username
-                        )
-                        .autocapitalization(.none)
-                        .accessibilityIdentifier("UserNameInput")
-                        .placeholder(when: username.isEmpty) {
-                            Text("Benutzername").foregroundColor(Color(hex: "666666"))
-                        }
-                        .accentColor(Color.black)
-                        .padding([.horizontal], 30)
-                        .padding([.vertical], 15)
-                        .background(RoundedRectangle(cornerRadius: 4).fill(Color(hex: "FFF1ECE6")))
-                        .padding([.leading], 40)
-                        .padding([.trailing], 15)
-                        .padding([.bottom], 8)
-                        .onTapGesture {isError = false}
-                        
-                        
-                        Button {
-                            username = ""
-                        } label: {
-                            Image(systemName: "multiply.circle.fill")
-                        }
-                        .foregroundColor(.secondary)
-                        .padding(.trailing, 0.0)
-                        .padding(.leading, 0.0)
-                        .padding(.bottom, 6.0)
-                        .accessibilityIdentifier("clearButtonUserName")
-                    }
-                   
-                    HStack
-                    {
-                       
-                        SecureField("", text: $password)
-                            .accessibilityIdentifier("PasswortInput")
-                            .placeholder(when: password.isEmpty) {
-                                Text("Passwort").foregroundColor(Color(hex: "666666"))
-                            }
-                            .accentColor(Color.black)
-                            .padding([.horizontal], 30)
-                            .padding([.vertical], 15)
-                            .background(RoundedRectangle(cornerRadius: 4).fill(Color(hex: "FFF1ECE6")))
-                            .padding([.leading], 40)
-                            .padding([.trailing], 15)
-                            .padding([.bottom], 8)
-                            .onTapGesture {isError = false}
-                        
-                        Button {
-                            password = ""
-                        } label: {
-                            Image(systemName: "multiply.circle.fill")
-                        }
-                        .foregroundColor(.secondary)
-                        .padding(.trailing, 0.0)
-                        .padding(.leading, 0.0)
-                        .padding(.bottom, 6.0)
-                        .accessibilityIdentifier("clearButtonPassword")
-                    }
-                   
                     
+                    CustomTextField(text: $username, id: "UserNameInput", placeholderString: "Benutzername")
+                        .onTapGesture {isError = false}
+                    CustomTextField(text: $password, id: "PasswortInput", placeholderString: "Passwort", isSecure: true)
+                        .onTapGesture {isError = false}
                     
                     if(isError) {
                         Text("Benutzername oder Passwort falsch")
@@ -154,13 +96,13 @@ struct SecondScreen: View {
                 
                 List()
                 { 
-                    ForEach(items.indices, id: \.self) { index in
+                    ForEach(Array(zip(items.indices, items)), id: \.0) { index, item in
                     HStack{
                         Button(action: {
                             rowClickedId = index
                             showDialog = true
                         }) {
-                            Text(items[index])
+                            Text(item)
                                 .accessibilityIdentifier ("todoText \(index)")
                             Spacer()
                         }
